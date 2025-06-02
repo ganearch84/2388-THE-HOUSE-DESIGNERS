@@ -390,3 +390,35 @@
   switchScene(scenes[0]);
 
 })();
+<div id="marzipano">
+    <div id="logo-container">
+        <img src="logo.png" alt="My Logo" id="logo">
+    </div>
+    <div class="scene">
+        <div class="panorama-content">
+            <!-- Marzipano 360° media goes here -->
+        </div>
+    </div>
+</div>
+
+<style>
+    #logo-container {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 100; /* Ensure logo is above the panorama */
+    }
+    #logo {
+        width: 100px; /* Adjust as needed */
+        height: auto;
+    }
+</style>
+
+<script>
+    // Marzipano initialization and other code...
+
+    // Example: Dynamically hide the logo on a specific event
+    document.addEventListener('event-name', function() {
+        document.getElementById('logo-container').style.display = 'none';
+    });
+</script>
