@@ -828,3 +828,16 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+
+#logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  pointer-events: none; /* allows clicks to pass through */
+}
+
+#logo {
+  height: 50px; /* Adjust size as needed */
+  opacity: 0.9; /* Optional: make it slightly transparent */
+}
